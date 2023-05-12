@@ -1,14 +1,14 @@
 package com.example.pillabikeapp.contract;
 
 
-import com.example.pillabikeapp.model.Parking;
+import com.example.pillabikeapp.domain.Parking;
 
 import java.util.List;
 
 /**
  * Declaramos la lógica las view y presenter que une ambas
  */
-public class ParkingListContract {
+public interface ParkingListContract {
 
     /**
      * Que necesita el model para solicitar a la API
@@ -18,7 +18,7 @@ public class ParkingListContract {
             void onLoadParkingSucess(List<Parking> parkings); //devolvemos una lista de parkings
             void onLoadParkingError(String message); //Devolvemos un posible error
         }
-        void loadAllParking( OnLoadParkingListener listener); //quien le llame tiene que tener un listener para que le chive lo que ha pasado
+        void loadAllParking(OnLoadParkingListener listener); //quien le llame tiene que tener un listener para que le chive lo que ha pasado
     }
 
     /**
@@ -30,6 +30,6 @@ public class ParkingListContract {
     }
 
     interface Presenter {
-        void loadAllUsers();
+        void loadAllParking();
     }
 }

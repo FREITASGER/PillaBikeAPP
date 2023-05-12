@@ -1,4 +1,4 @@
-package com.example.pillabikeapp.model;
+package com.example.pillabikeapp.domain;
 
 import java.time.LocalDate;
 

@@ -1,20 +1,22 @@
-package com.example.pillabikeapp.model;
+package com.example.pillabikeapp.domain;
 
+import java.io.Serializable;
 import java.time.LocalDate;
+import java.time.LocalTime;
 
-public class Parking {
+public class Parking implements Serializable {
 
     private long id;
     private String name;
     private String city;
-    private LocalDate open;
-    private LocalDate close;
+    private LocalTime open;
+    private LocalTime close;
     private boolean isFull;
 
     /**
      *Constructor para añadir y modificar
      */
-    public Parking(String name, String city, LocalDate open, LocalDate close, boolean isFull) {
+    public Parking(String name, String city, LocalTime open, LocalTime close, boolean isFull) {
         this.name = name;
         this.city = city;
         this.open = open;
@@ -46,19 +48,19 @@ public class Parking {
         this.city = city;
     }
 
-    public LocalDate getOpen() {
+    public LocalTime getOpen() {
         return open;
     }
 
-    public void setOpen(LocalDate open) {
+    public void setOpen(LocalTime open) {
         this.open = open;
     }
 
-    public LocalDate getClose() {
+    public LocalTime getClose() {
         return close;
     }
 
-    public void setClose(LocalDate close) {
+    public void setClose(LocalTime close) {
         this.close = close;
     }
 

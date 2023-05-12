@@ -1,7 +1,7 @@
 package com.example.pillabikeapp.api;
 
-import com.example.pillabikeapp.model.Bike;
-import com.example.pillabikeapp.model.Parking;
+import com.example.pillabikeapp.domain.Bike;
+import com.example.pillabikeapp.domain.Parking;
 
 import java.util.List;
 

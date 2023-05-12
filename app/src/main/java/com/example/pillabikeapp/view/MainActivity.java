@@ -29,9 +29,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        listParking = findViewById(R.id.list_parking_main_button); //botón declarado en el layout
+        listParking.setOnClickListener(view -> {
+            Intent intent = new Intent(this, ParkingListView.class); //TODO donde nos manda al pinchar sobre el boton mapas en el action bar
+            startActivity(intent);
+        });
+
+        listBike = findViewById(R.id.list_bike_main_button); //botón declarado en el layout
+        listBike.setOnClickListener(view -> {
+            Intent intent = new Intent(this, MainActivity.class); //TODO donde nos manda al pinchar sobre el boton mapas en el action bar
+            startActivity(intent);
+        });
     }
-
-
 
     /**
      * PAra crear el menu (el actionBar)
