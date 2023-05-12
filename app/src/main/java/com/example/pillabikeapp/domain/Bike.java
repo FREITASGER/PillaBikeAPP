@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Bike {
 
     private long id;
-    private LocalDate buyDate;
+    private String buyDate;
     private String description;
     private float price;
     private boolean electric;
@@ -14,7 +14,7 @@ public class Bike {
     /**
      * Construcctor para añadir
      */
-    public Bike(LocalDate buyDate, String description, float price, boolean electric) {
+    public Bike(String buyDate, String description, float price, boolean electric) {
         this.buyDate = buyDate;
         this.description = description;
         this.price = price;
@@ -29,11 +29,11 @@ public class Bike {
         this.id = id;
     }
 
-    public LocalDate getBuyDate() {
+    public String  getBuyDate() {
         return buyDate;
     }
 
-    public void setBuyDate(LocalDate buyDate) {
+    public void setBuyDate(String  buyDate) {
         this.buyDate = buyDate;
     }
 

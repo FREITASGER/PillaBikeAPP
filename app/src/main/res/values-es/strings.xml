@@ -15,4 +15,9 @@
     <string name="remove_parking">Remove Parking</string>
     <string name="yes">Yes</string>
     <string name="not">Not</string>
+    <string name="buydate">Buy Date:</string>
+    <string name="electric">Electric:</string>
+    <string name="description">Description:</string>
+    <string name="price">Price:</string>
+    <string name="parking_not_found">Parking not found</string>
 </resources>

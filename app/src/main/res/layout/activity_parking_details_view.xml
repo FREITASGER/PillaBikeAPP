@@ -17,13 +17,13 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textViewbuyDate"
+                android:id="@+id/textViewName"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/buydate" />
+                android:text="@string/name" />
 
             <TextView
-                android:id="@+id/tv_bike_buyDate_item"
+                android:id="@+id/tv_parking_name_details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#000000"
@@ -36,13 +36,13 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textViewDescription"
+                android:id="@+id/textViewCity"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/description" />
+                android:text="@string/city" />
 
             <TextView
-                android:id="@+id/tv_bike_description_item"
+                android:id="@+id/tv_parking_city_details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#000000"
@@ -55,13 +55,13 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textPrice"
+                android:id="@+id/textViewOpen"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/price" />
+                android:text="@string/open" />
 
             <TextView
-                android:id="@+id/tv_parking_close_item"
+                android:id="@+id/tv_parking_open_details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#000000"
@@ -74,33 +74,33 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textViewElectric"
+                android:id="@+id/textClose"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="@string/electric" />
+                android:text="@string/close" />
+
+            <TextView
+                android:id="@+id/tv_parking_close_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewFull"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/full" />
 
             <CheckBox
-                android:id="@+id/tv_bike_electric_item"
+                android:id="@+id/cb_parking_full_details"
                 android:clickable="false"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textViewParking"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="@string/parking" />
-
-            <TextView
-                android:id="@+id/tv_bike_parking_item"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#000000"
@@ -116,37 +116,34 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/details_bike_button"
+            android:id="@+id/modify_parking_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:backgroundTint="#020200"
             android:padding="5dp"
-            android:text="@string/details"
+            android:text="@string/modify"
             android:textSize="12sp"
             android:textColor="#F4D504"
             app:iconTint="#F4D504"
             app:icon="?android:attr/actionModeFindDrawable" />
 
-        <Button
-            android:id="@+id/delete_bike_button"
-            style="@style/Widget.AppCompat.Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:backgroundTint="#020200"
-            android:padding="5dp"
-            android:text="@string/delete"
-            android:textColor="#F4D504"
-            android:textSize="12sp"
-            app:icon="@android:drawable/ic_menu_delete"
-            app:iconPadding="12dp"
-            app:iconTint="#F4D504" />
+<!--        <Button-->
+<!--            android:id="@+id/delete_parking_button_details"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:backgroundTint="#020200"-->
+<!--            android:padding="5dp"-->
+<!--            android:text="@string/delete"-->
+<!--            android:textColor="#F4D504"-->
+<!--            android:textSize="12sp"-->
+<!--            app:icon="@android:drawable/ic_menu_delete"-->
+<!--            app:iconPadding="12dp"-->
+<!--            app:iconTint="#F4D504" />-->
 
     </LinearLayout>
-
-
 
 </LinearLayout>

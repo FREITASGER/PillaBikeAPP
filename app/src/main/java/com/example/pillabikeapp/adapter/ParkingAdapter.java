@@ -1,6 +1,7 @@
 package com.example.pillabikeapp.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.pillabikeapp.R;
 import com.example.pillabikeapp.domain.Parking;
+import com.example.pillabikeapp.view.ParkingDetailsView;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -66,8 +68,10 @@ public class ParkingAdapter extends RecyclerView.Adapter<ParkingAdapter.ParkingH
 //        holder.id.setText(parkingList.get(position).getId());
         holder.name.setText(parkingList.get(position).getName());
         holder.city.setText(parkingList.get(position).getCity());
-        holder.open.setText(parkingList.get(position).getOpen().format(DateTimeFormatter.ofPattern("hh:mm")));
-        holder.close.setText(parkingList.get(position).getClose().format(DateTimeFormatter.ofPattern("hh:mm")));
+        holder.open.setText(parkingList.get(position).getOpen());
+        holder.close.setText(parkingList.get(position).getClose());
+//        holder.open.setText(parkingList.get(position).getOpen().format(DateTimeFormatter.ofPattern("hh:mm")));
+//        holder.close.setText(parkingList.get(position).getClose().format(DateTimeFormatter.ofPattern("hh:mm")));
         holder.isFull.setChecked(parkingList.get(position).isFull());
 //        LocalTime localTime = LocalTime.now();
 //        String strLocalTime = localTime.format(DateTimeFormatter.ofPattern("hh:mm"));
@@ -110,14 +114,14 @@ public class ParkingAdapter extends RecyclerView.Adapter<ParkingAdapter.ParkingH
 //            userId = view.findViewById(R.id.user_id);
             name = view.findViewById(R.id.tv_parking_name_item);
             city = view.findViewById(R.id.tv_parking_city_item);
-            open = view.findViewById(R.id.tv_parking_open_item);
-            close = view.findViewById(R.id.tv_parking_close_item);
-            isFull = view.findViewById(R.id.tv_parking_full_item);
+//            open = view.findViewById(R.id.tv_parking_open_item);
+//            close = view.findViewById(R.id.tv_parking_close_item);
+//            isFull = view.findViewById(R.id.tv_parking_full_item);
 
             detailsParkingButton = view.findViewById(R.id.details_parking_button);
 //            modifyUserButton = view.findViewById(R.id.modify_user_button); //De momento en está vista no voy a modificar
-            deleteParkingButton = view.findViewById(R.id.delete_parking_button);
-            addBikeParkingButton = view.findViewById(R.id.bikeAdd_parking_button);
+//            deleteParkingButton = view.findViewById(R.id.delete_parking_button);
+//            addBikeParkingButton = view.findViewById(R.id.bikeAdd_parking_button);
 
             //TODO añadir opción que realizarán los botones
 //            //Para decirle que hace el boton cuando pulsamos sobre el
@@ -126,24 +130,23 @@ public class ParkingAdapter extends RecyclerView.Adapter<ParkingAdapter.ParkingH
 //             Modificar un usuario
             detailsParkingButton.setOnClickListener(v -> detailsParking(getAdapterPosition()));
             // Eliminar un usuario
-            deleteParkingButton.setOnClickListener(v -> deleteParking(getAdapterPosition()));
-            //Añadir Equipo a entrenador
-            addBikeParkingButton.setOnClickListener(v -> parkingAddBike(getAdapterPosition()));
+//            deleteParkingButton.setOnClickListener(v -> deleteParking(getAdapterPosition()));
+//            //Añadir Equipo a entrenador
+//            addBikeParkingButton.setOnClickListener(v -> parkingAddBike(getAdapterPosition()));
         }
 
         /**
          * Método para ver los detalle de un parking
          */
         private void detailsParking(int position) {
-//            Parking parking = parkingList.get(position);
-//
-//            Intent intent = new Intent(context, BikeRegisterView.class);
-//            intent.putExtra("userId", parking.getId());
-//            intent.putExtra("name", parking.getName());
-//            context.startActivity(intent);
+            Parking parking = parkingList.get(position);
+
+            Intent intent = new Intent(context, ParkingDetailsView.class);
+            intent.putExtra("parkingId", parking.getId());
+            intent.putExtra("name", parking.getName());
+            context.startActivity(intent);
         }
     }
-
 
         /**
          * Métodos de los botones del layout para recoger el id y registrar una inspection

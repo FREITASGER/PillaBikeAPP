@@ -9,14 +9,14 @@ public class Parking implements Serializable {
     private long id;
     private String name;
     private String city;
-    private LocalTime open;
-    private LocalTime close;
+    private String  open;
+    private String  close;
     private boolean isFull;
 
     /**
      *Constructor para añadir y modificar
      */
-    public Parking(String name, String city, LocalTime open, LocalTime close, boolean isFull) {
+    public Parking(String name, String city, String open, String close, boolean isFull) {
         this.name = name;
         this.city = city;
         this.open = open;
@@ -48,19 +48,19 @@ public class Parking implements Serializable {
         this.city = city;
     }
 
-    public LocalTime getOpen() {
+    public String getOpen() {
         return open;
     }
 
-    public void setOpen(LocalTime open) {
+    public void setOpen(String open) {
         this.open = open;
     }
 
-    public LocalTime getClose() {
+    public String getClose() {
         return close;
     }
 
-    public void setClose(LocalTime close) {
+    public void setClose(String close) {
         this.close = close;
     }
 
