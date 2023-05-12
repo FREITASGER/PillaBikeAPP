@@ -117,6 +117,7 @@
 
         <Button
             android:id="@+id/details_bike_button"
+            style="@style/Widget.Material3.Button.OutlinedButton.Icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -131,7 +132,7 @@
 
         <Button
             android:id="@+id/delete_bike_button"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.Material3.Button.OutlinedButton.Icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
