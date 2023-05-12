@@ -28,7 +28,7 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".ParkingDetailsView"
+            android:name=".view.ParkingDetailsView"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

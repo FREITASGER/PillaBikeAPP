@@ -68,11 +68,11 @@ public class ParkingAdapter extends RecyclerView.Adapter<ParkingAdapter.ParkingH
 //        holder.id.setText(parkingList.get(position).getId());
         holder.name.setText(parkingList.get(position).getName());
         holder.city.setText(parkingList.get(position).getCity());
-        holder.open.setText(parkingList.get(position).getOpen());
-        holder.close.setText(parkingList.get(position).getClose());
+//        holder.open.setText(parkingList.get(position).getOpen());
+//        holder.close.setText(parkingList.get(position).getClose());
 //        holder.open.setText(parkingList.get(position).getOpen().format(DateTimeFormatter.ofPattern("hh:mm")));
 //        holder.close.setText(parkingList.get(position).getClose().format(DateTimeFormatter.ofPattern("hh:mm")));
-        holder.isFull.setChecked(parkingList.get(position).isFull());
+//        holder.isFull.setChecked(parkingList.get(position).isFull());
 //        LocalTime localTime = LocalTime.now();
 //        String strLocalTime = localTime.format(DateTimeFormatter.ofPattern("hh:mm"));
     }
