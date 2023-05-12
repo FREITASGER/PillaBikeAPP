@@ -117,7 +117,9 @@
 
         <Button
             android:id="@+id/details_bike_button"
-            style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+            style="@style/Widget.Material3.Button.IconButton.Outlined"
+            android:textSize="12sp"
+            app:iconSize="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -125,14 +127,15 @@
             android:backgroundTint="#020200"
             android:padding="5dp"
             android:text="@string/details"
-            android:textSize="12sp"
             android:textColor="#F4D504"
             app:iconTint="#F4D504"
             app:icon="?android:attr/actionModeFindDrawable" />
 
         <Button
             android:id="@+id/delete_bike_button"
-            style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+            style="@style/Widget.Material3.Button.IconButton.Outlined"
+            android:textSize="12sp"
+            app:iconSize="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -141,7 +144,6 @@
             android:padding="5dp"
             android:text="@string/delete"
             android:textColor="#F4D504"
-            android:textSize="12sp"
             app:icon="@android:drawable/ic_menu_delete"
             app:iconPadding="12dp"
             app:iconTint="#F4D504" />

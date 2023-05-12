@@ -43,12 +43,15 @@
 
             <Button
                 android:id="@+id/list_parking_main_button"
-                style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                style="@style/Widget.Material3.Button.IconButton.Outlined"
+                android:textSize="12sp"
+                app:iconSize="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="#020200"
                 android:text="@string/parking"
+                app:icon="@drawable/ic_baseline_local_parking_24"
                 android:textColor="#F4D504"
                 app:iconTint="#F4D504" />
 
@@ -86,23 +89,28 @@
 
             <Button
                 android:id="@+id/list_bike_main_button"
-                style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                style="@style/Widget.Material3.Button.IconButton.Outlined"
+                android:textSize="12sp"
+                app:iconSize="30dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#020200"
                 android:text="Bikes"
                 android:textColor="#F4D504"
+                app:icon="@drawable/ic_baseline_electric_bike_24"
                 app:iconTint="#F4D504" />
 
             <Button
                 android:id="@+id/add_bike_main_button"
-                style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+                style="@style/Widget.Material3.Button.IconButton.Outlined"
+                android:textSize="12sp"
+                app:iconSize="30dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#020200"
                 android:text="add"
                 android:textColor="#F4D504"
-                app:icon="@drawable/ic_outline_add_circle_24"
+                app:icon="@drawable/ic_baseline_data_saver_on_24"
                 app:iconTint="#F4D504" />
 
         </TableRow>
