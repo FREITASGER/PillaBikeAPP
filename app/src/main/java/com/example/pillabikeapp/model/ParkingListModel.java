@@ -3,7 +3,7 @@ package com.example.pillabikeapp.model;
 import android.content.Context;
 import android.util.Log;
 
-import com.example.pillabikeapp.api.PillaBikeApi;
+import com.example.pillabikeapp.api.PillaBikeAPI;
 import com.example.pillabikeapp.api.PillaBikeApiInterface;
 import com.example.pillabikeapp.contract.ParkingListContract;
 import com.example.pillabikeapp.domain.Parking;
@@ -25,8 +25,8 @@ public class ParkingListModel implements ParkingListContract.Model {
     @Override
     public void loadAllParking(OnLoadParkingListener listener) {
         //Nos devuelve una instancia de happDeporteApi como la definimos en TodoApiInterface, tiene los métodos que usamos para comunicarnos con la API
-        PillaBikeApiInterface pillaBikeApi = PillaBikeApi.buildInstance();
-        Call<List<Parking>> callParkings = PillaBikeApi.buildInstance().getParkings(); //Para realizar la llamada y parkings el getParkings definido
+        PillaBikeApiInterface pillaBikeApi = PillaBikeAPI.buildInstance();
+        Call<List<Parking>> callParkings = PillaBikeAPI.buildInstance().getParkings(); //Para realizar la llamada y parkings el getParkings definido
         Log.d("parkings", "Llamada desde el model"); //Para depurar errores y ver si avanza o donde se para
         callParkings.enqueue(new Callback<List<Parking>>() {
             @Override

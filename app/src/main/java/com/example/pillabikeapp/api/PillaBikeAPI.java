@@ -5,7 +5,7 @@ import static com.example.pillabikeapp.api.Constants.BASE_URL;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class PillaBikeApi {
+public class PillaBikeAPI {
 
     /**
      * Método para instanstanciar la libreria retrofit y consumir la API
