@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">PillaBikeAPP</string>
     <string name="parking">Parking</string>
     <string name="bikes">Bikes</string>
     <string name="modify">Modify:</string>
