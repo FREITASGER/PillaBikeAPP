@@ -47,7 +47,7 @@ public class ParkingDetailsView extends AppCompatActivity implements ParkingDeta
         etParkingName.setText(parking.getName());
         etParkingCity.setText(parking.getCity());
         etParkingOpen.setText(parking.getOpen());
-        etParkingClose.setText(parking.getOpen());
+        etParkingClose.setText(parking.getClose());
         cbFull.setChecked(parking.isFull());
     }
 

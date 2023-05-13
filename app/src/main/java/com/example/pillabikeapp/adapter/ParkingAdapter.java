@@ -65,6 +65,7 @@ public class ParkingAdapter extends RecyclerView.Adapter<ParkingAdapter.ParkingH
      */
     @Override
     public void onBindViewHolder(@NonNull ParkingAdapter.ParkingHolder holder, int position) {
+        //Prueba
 //        holder.id.setText(parkingList.get(position).getId());
         holder.name.setText(parkingList.get(position).getName());
         holder.city.setText(parkingList.get(position).getCity());
