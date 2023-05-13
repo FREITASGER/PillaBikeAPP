@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         listParking = findViewById(R.id.list_parking_main_button); //botón declarado en el layout
         listParking.setOnClickListener(view -> {
-            Intent intent = new Intent(this, ParkingListView.class); //TODO donde nos manda al pinchar sobre el boton mapas en el action bar
+            Intent intent = new Intent(this, ParkingListView.class);
             startActivity(intent);
         });
 
